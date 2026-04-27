@@ -239,12 +239,12 @@ const coreStrengths = [
 ];
 
 const certifications = [
-  { name: "2級ファイナンシャル・プランニング技能士", image: "/cert-fp.jpg" },
-  { name: "Google AI Essentials (Coursera, 2026年1月)", image: "/cert-google-ai.jpg" },
-  { name: "Google Prompting Essentials (Coursera, 2026年2月)", image: "/cert-google-prompt.jpg" },
-  { name: "Generative AI for Leaders (Vanderbilt/Coursera, 2026年2月)", image: "/cert-vanderbilt.jpg" },
-  { name: "AI For Business (University of Pennsylvania/Coursera, 2026年2月)", image: "/cert-upenn.jpg" },
-  { name: "Generative AI for Executives and Business Leaders (IBM/Coursera, 2026年2月)", image: "/cert-ibm.jpg" },
+  { name: "2級ファイナンシャル・プランニング技能士", image: `${import.meta.env.BASE_URL}cert-fp.jpg` },
+  { name: "Google AI Essentials (Coursera, 2026年1月)", image: `${import.meta.env.BASE_URL}cert-google-ai.jpg` },
+  { name: "Google Prompting Essentials (Coursera, 2026年2月)", image: `${import.meta.env.BASE_URL}cert-google-prompt.jpg` },
+  { name: "Generative AI for Leaders (Vanderbilt/Coursera, 2026年2月)", image: `${import.meta.env.BASE_URL}cert-vanderbilt.jpg` },
+  { name: "AI For Business (University of Pennsylvania/Coursera, 2026年2月)", image: `${import.meta.env.BASE_URL}cert-upenn.jpg` },
+  { name: "Generative AI for Executives and Business Leaders (IBM/Coursera, 2026年2月)", image: `${import.meta.env.BASE_URL}cert-ibm.jpg` },
 ];
 
 type Lang = keyof typeof i18n;
@@ -317,7 +317,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative aspect-square">
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl opacity-50"></div>
-              <img src="/profile.jpg" alt="Takayuki Kido" className="relative rounded-2xl w-full h-full object-cover" />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Takayuki Kido" className="relative rounded-2xl w-full h-full object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <div className="flex items-center gap-2 mb-4 text-primary"><User className="w-5 h-5" /><span className="text-sm font-bold uppercase tracking-widest">{t.about.title}</span></div>
