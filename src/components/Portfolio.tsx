@@ -259,8 +259,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center gap-2">
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="font-display text-xl font-bold tracking-tighter">
-              TAKAYUKI KIDO <span className="text-[10px] bg-orange-800 text-white px-2 rounded-full font-mono">Ver 7.0</span>
-              <span className="text-primary">.</span>
+              TAKAYUKI KIDO<span className="text-primary">.</span>
             </motion.div>
             <div className="hidden lg:flex space-x-6 text-sm font-medium">
               <a href="#about" className="hover:text-primary transition-colors">{t.nav.profile}</a>
