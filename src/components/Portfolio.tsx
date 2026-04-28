@@ -239,12 +239,42 @@ const coreStrengths = [
 ];
 
 const certifications = [
-  { name: "2級ファイナンシャル・プランニング技能士", image: `${import.meta.env.BASE_URL}cert-fp.jpg` },
-  { name: "Google AI Essentials (Coursera, 2026年1月)", image: `${import.meta.env.BASE_URL}cert-google-ai.jpg` },
-  { name: "Google Prompting Essentials (Coursera, 2026年2月)", image: `${import.meta.env.BASE_URL}cert-google-prompt.jpg` },
-  { name: "Generative AI for Leaders (Vanderbilt/Coursera, 2026年2月)", image: `${import.meta.env.BASE_URL}cert-vanderbilt.jpg` },
-  { name: "AI For Business (University of Pennsylvania/Coursera, 2026年2月)", image: `${import.meta.env.BASE_URL}cert-upenn.jpg` },
-  { name: "Generative AI for Executives and Business Leaders (IBM/Coursera, 2026年2月)", image: `${import.meta.env.BASE_URL}cert-ibm.jpg` },
+  {
+    name: "2級ファイナンシャル・プランニング技能士",
+    image: `${import.meta.env.BASE_URL}cert-fp.jpg`,
+    summary:
+      "国家資格の技能検定で、家計・保険・税務・不動産・相続など6分野の知識を実務で活用する力を認定する資格です。学科と実技の両方に合格することで、資産設計の提案力を証明できます。",
+  },
+  {
+    name: "Google AI Essentials (Coursera, 2026年1月)",
+    image: `${import.meta.env.BASE_URL}cert-google-ai.jpg`,
+    summary:
+      "Google提供の初心者向けAI講座で、業務での生成AI活用を短時間で体系的に学ぶコースです。実務で使えるプロンプト設計、情報整理、責任あるAI利用の基礎を習得しています。",
+  },
+  {
+    name: "Google Prompting Essentials (Coursera, 2026年2月)",
+    image: `${import.meta.env.BASE_URL}cert-google-prompt.jpg`,
+    summary:
+      "生成AIへの指示品質を高めるためのプロンプト特化講座です。5ステップの設計手法を通じて、要約・資料作成・分析支援など日常業務で再利用できるプロンプト設計力を身につけています。",
+  },
+  {
+    name: "Generative AI for Leaders (Vanderbilt/Coursera, 2026年2月)",
+    image: `${import.meta.env.BASE_URL}cert-vanderbilt.jpg`,
+    summary:
+      "リーダー視点で生成AIを意思決定・コミュニケーション・戦略立案に活用する方法を学ぶ講座です。会議設計や提案評価など、経営実務に直結する活用フレームを実践的に習得しています。",
+  },
+  {
+    name: "AI For Business (University of Pennsylvania/Coursera, 2026年2月)",
+    image: `${import.meta.env.BASE_URL}cert-upenn.jpg`,
+    summary:
+      "Whartonのビジネス向けAIプログラムで、AI戦略・ガバナンス・マーケティング・人材領域への実装を学ぶ内容です。技術導入だけでなく、運用設計と意思決定への組み込み方を理解しています。",
+  },
+  {
+    name: "Generative AI for Executives and Business Leaders (IBM/Coursera, 2026年2月)",
+    image: `${import.meta.env.BASE_URL}cert-ibm.jpg`,
+    summary:
+      "IBMの経営層向け講座で、生成AIの事業価値、データ活用、ガバナンス、信頼性の観点を短時間で整理する内容です。組織導入時のリスク管理と実行方針を判断する基盤を強化しています。",
+  },
 ];
 
 type Lang = keyof typeof i18n;
@@ -400,12 +430,15 @@ export default function Portfolio() {
                 {certifications.map((cert) => (
                   <div key={cert.name} className="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-xl border border-muted/50 bg-muted/5 hover:bg-muted/10 transition-colors">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 hidden sm:flex"><CircleCheck className="w-5 h-5" /></div>
-                    <div className="flex-grow"><span className="text-sm font-semibold">{cert.name}</span></div>
+                    <div className="flex-grow">
+                      <span className="text-sm font-semibold">{cert.name}</span>
+                      <p className="text-xs text-muted-foreground mt-2 leading-relaxed">{cert.summary}</p>
+                    </div>
                     <div className="w-full sm:w-48 aspect-[4/3] rounded-lg overflow-hidden border border-muted/50 relative group">
                       <img
                         src={cert.image}
                         alt={cert.name}
-                        className={`w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-zoom-in ${cert.name.includes("IBM") ? "scale-[1.24] object-center" : ""}`}
+                        className={`w-full h-full object-cover transition-all duration-500 cursor-zoom-in ${cert.name.includes("IBM") ? "scale-[1.24] object-center" : ""}`}
                       />
                     </div>
                   </div>
