@@ -401,7 +401,13 @@ export default function Portfolio() {
                   <div key={cert.name} className="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-xl border border-muted/50 bg-muted/5 hover:bg-muted/10 transition-colors">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 hidden sm:flex"><CircleCheck className="w-5 h-5" /></div>
                     <div className="flex-grow"><span className="text-sm font-semibold">{cert.name}</span></div>
-                    <div className="w-full sm:w-48 aspect-[4/3] rounded-lg overflow-hidden border border-muted/50 relative group"><img src={cert.image} alt={cert.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-zoom-in" /></div>
+                    <div className="w-full sm:w-48 aspect-[4/3] rounded-lg overflow-hidden border border-muted/50 relative group">
+                      <img
+                        src={cert.image}
+                        alt={cert.name}
+                        className={`w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-zoom-in ${cert.name.includes("IBM") ? "scale-110" : ""}`}
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
