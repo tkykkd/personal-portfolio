@@ -197,7 +197,7 @@ const baseAchievements = [
     desc: "構成設計、文言設計、公開までを短期間で実装。作品を魅力的に見せる導線設計と、更新しやすい運用性を重視して制作。",
     tags: ["Web制作", "UI/UX設計", "運用性重視"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=600",
-    link: { href: "https://ais-pre-rneytcbdu2kguu5oyuxts5-459773233175.asia-east1.run.app" },
+    link: { href: "https://tkykkd.github.io/onika1/" },
   },
   {
     key: "apps",
