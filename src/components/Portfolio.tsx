@@ -405,7 +405,7 @@ export default function Portfolio() {
                       <img
                         src={cert.image}
                         alt={cert.name}
-                        className={`w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-zoom-in ${cert.name.includes("IBM") ? "scale-110" : ""}`}
+                        className={`w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-zoom-in ${cert.name.includes("IBM") ? "scale-[1.24] object-center" : ""}`}
                       />
                     </div>
                   </div>
