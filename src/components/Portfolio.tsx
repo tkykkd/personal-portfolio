@@ -201,6 +201,7 @@ const baseAchievements = [
       { name: "ONIKA STUDIO", url: "https://tkykkd.github.io/onika1/" },
       { name: "ONIKA Creative Archive", url: "https://tkykkd.github.io/onika2/" },
       { name: "RE-VERSE Technologies 株式会社", url: "https://tkykkd.github.io/re-verse/" },
+      { name: "メッセージお届けサイト", url: "https://tkykkd.github.io/koichi2/" },
     ],
   },
   {
@@ -423,7 +424,7 @@ export default function Portfolio() {
                       <div className="space-y-2 mb-6">{achievement.subLinks.map((link, i) => <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs font-medium text-muted-foreground hover:text-primary transition-colors py-1.5 px-3 rounded-md bg-muted/30 group/link"><Play className="w-3 h-3 text-red-500" /><span className="flex-grow">{t.ytLinks[i]}</span><ExternalLink className="w-3 h-3 opacity-0 group-hover/link:opacity-100 transition-opacity" /></a>)}</div>
                     )}
                     <div className="flex flex-wrap gap-2 mt-auto">{achievement.tags.map((tag) => <Badge key={tag} variant="secondary" className="text-[10px] uppercase font-bold tracking-tighter rounded-sm px-2 py-0 border-primary/20 bg-primary/5">{tag}</Badge>)}</div>
-                    {achievement.link && <Button variant="outline" size="sm" className="w-full mt-6 rounded-full text-xs font-bold" asChild><a href={achievement.link.href} target="_blank" rel="noopener noreferrer">{achievement.key === "studio" ? t.studioBtn : t.noteBtn}<ExternalLink className="ml-2 w-3 h-3" /></a></Button>}
+                    {achievement.link && achievement.key !== "studio" && <Button variant="outline" size="sm" className="w-full mt-6 rounded-full text-xs font-bold" asChild><a href={achievement.link.href} target="_blank" rel="noopener noreferrer">{t.noteBtn}<ExternalLink className="ml-2 w-3 h-3" /></a></Button>}
                   </CardContent>
                 </Card>
               </motion.div>
