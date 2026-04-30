@@ -172,7 +172,7 @@ const baseAchievements = [
   {
     key: "k",
     title: "K社 健康食品製造販売",
-    desc: "共同創業者として事業運営全般を担当。1年目売上3.4億円、2年目13億円超の成長を実現。少人数体制での全店セミナー運営と業務最適化を推進しました。",
+    desc: "共同創業者として事業運営全般を担当。1年目売上3.4億円、2年目13億円超の成長を実現。少人数体制での全店セミナー運営と業務最適化を推進。",
     tags: ["事業運営", "売上成長", "業務最適化"],
     image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800&h=600",
   },
@@ -192,12 +192,16 @@ const baseAchievements = [
   },
   {
     key: "studio",
-    title: "ONIKA STUDIO",
-    subtitle: "クリエイター向け多機能ポートフォリオ",
+    title: "サイト制作",
     desc: "構成設計、文言設計、公開までを短期間で実装。作品を魅力的に見せる導線設計と、更新しやすい運用性を重視して制作。",
     tags: ["Web制作", "UI/UX設計", "運用性重視"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=600",
     link: { href: "https://tkykkd.github.io/onika1/" },
+    subLinks: [
+      { name: "ONIKA STUDIO", url: "https://tkykkd.github.io/onika1/" },
+      { name: "ONIKA Creative Archive", url: "https://tkykkd.github.io/onika2/" },
+      { name: "RE-VERSE Technologies 株式会社", url: "https://tkykkd.github.io/re-verse/" },
+    ],
   },
   {
     key: "apps",
@@ -403,6 +407,17 @@ export default function Portfolio() {
                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">{achievement.desc}</p>
                     {achievement.key === "apps" && achievement.subLinks && (
                       <div className="space-y-2 mb-6">{achievement.subLinks.map((link, i) => <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs font-medium text-muted-foreground hover:text-primary transition-colors py-1.5 px-3 rounded-md bg-muted/30 group/link"><ExternalLink className="w-3 h-3" /><span className="flex-grow">{t.appLinks[i]}</span><ExternalLink className="w-3 h-3 opacity-0 group-hover/link:opacity-100 transition-opacity" /></a>)}</div>
+                    )}
+                    {achievement.key === "studio" && achievement.subLinks && (
+                      <div className="space-y-2 mb-6">
+                        {achievement.subLinks.map((link) => (
+                          <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs font-medium text-muted-foreground hover:text-primary transition-colors py-1.5 px-3 rounded-md bg-muted/30 group/link">
+                            <ExternalLink className="w-3 h-3" />
+                            <span className="flex-grow">{link.name}</span>
+                            <ExternalLink className="w-3 h-3 opacity-0 group-hover/link:opacity-100 transition-opacity" />
+                          </a>
+                        ))}
+                      </div>
                     )}
                     {achievement.key === "youtube" && achievement.subLinks && (
                       <div className="space-y-2 mb-6">{achievement.subLinks.map((link, i) => <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs font-medium text-muted-foreground hover:text-primary transition-colors py-1.5 px-3 rounded-md bg-muted/30 group/link"><Play className="w-3 h-3 text-red-500" /><span className="flex-grow">{t.ytLinks[i]}</span><ExternalLink className="w-3 h-3 opacity-0 group-hover/link:opacity-100 transition-opacity" /></a>)}</div>
