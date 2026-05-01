@@ -229,6 +229,14 @@ const baseAchievements = [
     ],
   },
   {
+    key: "aiContent",
+    title: "AI活用",
+    subtitle: "動画量産工場、記事訂正",
+    desc: "生成AIを活用し、動画制作のノウハウをテンプレ化して量産ラインを設計・運用。また記事の訂正対応や表記ゆれ是正など、コンテンツ品質を安定させるフローを整備しました。",
+    tags: ["生成AI", "動画制作", "コンテンツ品質"],
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800&h=600",
+  },
+  {
     key: "project365",
     title: "Project365（継続配信）",
     desc: "記事執筆に加え、音声解説・デザイン制作まで含む配信を運用。AIを活用した企画〜更新フローを実践。",
