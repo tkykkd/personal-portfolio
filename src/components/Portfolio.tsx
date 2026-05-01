@@ -231,10 +231,9 @@ const baseAchievements = [
   {
     key: "aiContent",
     title: "AI活用",
-    subtitle: "動画量産工場、記事訂正",
-    desc: "生成AIを活用し、動画制作のノウハウをテンプレ化して量産ラインを設計・運用。また記事の訂正対応や表記ゆれ是正など、コンテンツ品質を安定させるフローを整備しました。",
-    tags: ["生成AI", "動画制作", "コンテンツ品質"],
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800&h=600",
+    desc: "動画の量産フロー設計や、記事ストック運用など、短時間で大量生成しつつ体裁と品質ラインをそろえる運用を構築。SNS文面から制作・公開までを、エージェント役割の切り分けとワークフロー設計でつなぎ、再現可能な「AI組織」として回します。個人のAI活用の設計・コンサルティングも行っています。",
+    tags: ["ワークフロー設計", "エージェント設計", "AIコンサル"],
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800&h=600",
   },
   {
     key: "project365",
