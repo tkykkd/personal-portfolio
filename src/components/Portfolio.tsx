@@ -632,7 +632,7 @@ const achievementStatic: Record<
       { url: "https://tkykkd.github.io/onika1/" },
       { url: "https://tkykkd.github.io/onika2/" },
       { url: "https://tkykkd.github.io/re-verse/" },
-      { url: "https://tkykkd.github.io/koichi2/" },
+      { url: "https://tkykkd.github.io/share/" },
     ],
   },
   apps: {
