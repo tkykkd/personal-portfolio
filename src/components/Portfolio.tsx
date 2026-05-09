@@ -98,7 +98,7 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
     nav: { profile: "プロフィール", strengths: "強み", achievements: "実績", contact: "お問い合わせ" },
     hero: {
       title: ["事業を前進させる、", "運用設計", "と", "実行力", "。"],
-      desc: "経営・管理部門・コンテンツ運用の実務経験をもとに、業務改善、体制構築、動画/Web運用を一気通貫で担当。現在はQA/テスト領域への展開を見据え、AI活用を含む実務改善に取り組んでいます。",
+      desc: "経営・管理部門・コンテンツ運用の実務経験をもとに、業務改善、体制構築、動画/Web運用を一気通貫で担当。現在はバイブコーディングでのアプリ開発やAIを活用したアドバイス、実務改善に取り組んでいます。",
       viewWork: "実績を見る",
       contact: "お問い合わせ",
     },
@@ -235,7 +235,7 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
     nav: { profile: "Profile", strengths: "Strengths", achievements: "Achievements", contact: "Contact" },
     hero: {
       title: ["Driving Business Forward with ", "Operations Design", " and ", "Execution", "."],
-      desc: "Based on hands-on experience in management, administration, and content operations, I handle everything from process improvement and system development to video/Web operations. Currently focusing on applying AI to improve practical operations with an eye toward QA/testing.",
+      desc: "Based on hands-on experience in management, administration, and content operations, I handle process improvement, organizational design, and video/Web operations end-to-end. Currently focused on app development through vibe coding, AI-assisted guidance, and hands-on operational improvement.",
       viewWork: "View Work",
       contact: "Contact",
     },
@@ -372,7 +372,7 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
     nav: { profile: "ข้อมูลส่วนตัว", strengths: "จุดแข็ง", achievements: "ผลงาน", contact: "ติดต่อ" },
     hero: {
       title: ["ขับเคลื่อนธุรกิจด้วย ", "การออกแบบการดำเนินงาน", " และ ", "การลงมือทำ", "."],
-      desc: "จากประสบการณ์ตรงด้านการบริหาร การจัดการ และการดำเนินงานคอนเทนต์ ผมดูแลตั้งแต่การปรับปรุงกระบวนการ การพัฒนาระบบ ไปจนถึงวิดีโอและเว็บ ปัจจุบันเน้นการประยุกต์ใช้ AI เพื่อปรับปรุงงานจริง",
+      desc: "จากประสบการณ์ตรงด้านการบริหาร การจัดการ และการดำเนินงานคอนเทนต์ ผมดูแลการปรับปรุงกระบวนการ การออกแบบองค์กร และการดำเนินงานวิดีโอ/เว็บแบบครบสาย ปัจจุบันมุ่งพัฒนาแอปด้วยแนว vibe coding ให้คำแนะนำด้วย AI และขับเคลื่อนการปรับปรุงงานจริง",
       viewWork: "ดูผลงาน",
       contact: "ติดต่อสอบถาม",
     },
@@ -509,7 +509,7 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
     nav: { profile: "个人简介", strengths: "核心优势", achievements: "项目成就", contact: "联系我" },
     hero: {
       title: ["通过", "运营设计", "与", "执行力", "推动业务前进。"],
-      desc: "凭借在管理、行政和内容运营方面的实操经验，我负责从流程改进、系统开发到视频与Web运营的全过程。当前专注于将AI用于提升实务效率。",
+      desc: "凭借在管理、行政和内容运营方面的实操经验，我负责业务改进、体制搭建与视频/Web运营的全流程。目前正致力于借助氛围编程（vibe coding）进行应用开发，以及基于AI的建议与实务层面的改进。",
       viewWork: "查看成品",
       contact: "联系我",
     },
