@@ -48,7 +48,7 @@ type AchievementBlock = {
   title: string;
   desc: string;
   tags: readonly [string, string, string];
-  studioNames?: readonly [string, string, string, string];
+  studioNames?: readonly [string, string, string, string, string, string];
   subtitle?: string;
 };
 
@@ -146,7 +146,14 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
           title: "サイト制作",
           desc: "構成設計、文言設計、公開までを短期間で実装。作品を魅力的に見せる導線設計と、更新しやすい運用性を重視して制作。",
           tags: ["Web制作", "UI/UX設計", "運用性重視"],
-          studioNames: ["ONIKA STUDIO", "ONIKA Creative Archive", "RE-VERSE Technologies 株式会社", "メッセージお届けサイト"],
+          studioNames: [
+            "ONIKA STUDIO",
+            "ONIKA Creative Archive",
+            "RE-VERSE Technologies 株式会社",
+            "メッセージお届けサイト①",
+            "メッセージお届けサイト②",
+            "メディカルクラブ（多言語化サンプル）",
+          ],
         },
         apps: {
           title: "個人開発アプリ",
@@ -276,7 +283,14 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
           title: "Web Production",
           desc: "Structured IA and copy, shipped production sites quickly. Focused on compelling presentation, clear user flows, and maintainable operations.",
           tags: ["Web Production", "UI/UX", "Maintainability"],
-          studioNames: ["ONIKA STUDIO", "ONIKA Creative Archive", "RE-VERSE Technologies Co., Ltd.", "Message delivery site"],
+          studioNames: [
+            "ONIKA STUDIO",
+            "ONIKA Creative Archive",
+            "RE-VERSE Technologies Co., Ltd.",
+            "Message delivery site (1)",
+            "Message delivery site (2)",
+            "Medical Club (multilingual sample)",
+          ],
         },
         apps: {
           title: "Personal Apps",
@@ -406,7 +420,14 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
           title: "การผลิตเว็บไซต์",
           desc: "ออกแบบโครงสร้างและข้อความ เปิดตัวได้ในระยะเวลาสั้น เน้นการนำทางที่น่าสนใจและการดูแลที่อัปเดตง่าย",
           tags: ["เว็บ", "UI/UX", "การดูแลระยะยาว"],
-          studioNames: ["ONIKA STUDIO", "ONIKA Creative Archive", "RE-VERSE Technologies Co., Ltd.", "เว็บไซต์ส่งข้อความ"],
+          studioNames: [
+            "ONIKA STUDIO",
+            "ONIKA Creative Archive",
+            "RE-VERSE Technologies Co., Ltd.",
+            "เว็บไซต์ส่งข้อความ (1)",
+            "เว็บไซต์ส่งข้อความ (2)",
+            "Medical Club (ตัวอย่างหลายภาษา)",
+          ],
         },
         apps: {
           title: "แอปพลิเคชันที่พัฒนาเอง",
@@ -536,7 +557,14 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
           title: "网站制作",
           desc: "从结构、文案到上线在短期内落地；重视展示路径与可持续更新的维护性。",
           tags: ["网站制作", "UI/UX", "可维护性"],
-          studioNames: ["ONIKA STUDIO", "ONIKA Creative Archive", "RE-VERSE Technologies Co., Ltd.", "消息投递网站"],
+          studioNames: [
+            "ONIKA STUDIO",
+            "ONIKA Creative Archive",
+            "RE-VERSE Technologies Co., Ltd.",
+            "消息投递网站①",
+            "消息投递网站②",
+            "医疗俱乐部（多语言示例）",
+          ],
         },
         apps: {
           title: "个人开发应用",
@@ -633,6 +661,8 @@ const achievementStatic: Record<
       { url: "https://tkykkd.github.io/onika2/" },
       { url: "https://tkykkd.github.io/re-verse/" },
       { url: "https://tkykkd.github.io/share/" },
+      { url: "https://tkykkd.github.io/mother" },
+      { url: "https://tkykkd.github.io/5star-medical-club/" },
     ],
   },
   apps: {
