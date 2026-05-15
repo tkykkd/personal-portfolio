@@ -48,7 +48,7 @@ type AchievementBlock = {
   title: string;
   desc: string;
   tags: readonly [string, string, string];
-  studioNames?: readonly [string, string, string, string, string, string];
+  studioNames?: readonly [string, string, string, string, string, string, string];
   subtitle?: string;
 };
 
@@ -153,6 +153,7 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
             "メッセージお届けサイト①",
             "メッセージお届けサイト②",
             "メディカルクラブ（多言語化サンプル）",
+            "メディカルクラブ②（多言語化サンプル）",
           ],
         },
         apps: {
@@ -290,6 +291,7 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
             "Message delivery site (1)",
             "Message delivery site (2)",
             "Medical Club (multilingual sample)",
+            "Medical Club ② (multilingual sample)",
           ],
         },
         apps: {
@@ -427,6 +429,7 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
             "เว็บไซต์ส่งข้อความ (1)",
             "เว็บไซต์ส่งข้อความ (2)",
             "Medical Club (ตัวอย่างหลายภาษา)",
+            "Medical Club ② (ตัวอย่างหลายภาษา)",
           ],
         },
         apps: {
@@ -564,6 +567,7 @@ const i18n: Record<"ja" | "en" | "th" | "zh", LocaleBlock> = {
             "消息投递网站①",
             "消息投递网站②",
             "医疗俱乐部（多语言示例）",
+            "医疗俱乐部②（多语言示例）",
           ],
         },
         apps: {
@@ -663,6 +667,7 @@ const achievementStatic: Record<
       { url: "https://tkykkd.github.io/share/" },
       { url: "https://tkykkd.github.io/mother" },
       { url: "https://tkykkd.github.io/5star-medical-club/" },
+      { url: "https://tkykkd.github.io/5star-medical-club-2/" },
     ],
   },
   apps: {
